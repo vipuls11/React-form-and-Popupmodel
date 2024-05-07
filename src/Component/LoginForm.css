@@ -1,0 +1,37 @@
+
+    .FormLogin-Input{
+        width:50%;
+        margin: auto;
+        text-align: center;
+        border:2px solid Black;
+        padding: 50px;
+        margin-top: 50px;
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+        border-radius: 50px;
+        -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    }
+
+    .Form-InputLogin__h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .Form-InputLogin__p{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .Input-Item{
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px 5px;
+    }
+
+    .button{
+        width:100%;
+        margin:10px 0;
+        border: 1px solid Black;
+        padding: 8px;
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    }
