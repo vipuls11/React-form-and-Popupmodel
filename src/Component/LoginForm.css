@@ -35,3 +35,10 @@
         padding: 8px;
         background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     }
+
+        @media (max-width: 800px) {
+            .FormLogin-Input{
+               width: 95%;
+               margin: auto;
+            }
+        }
