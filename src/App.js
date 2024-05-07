@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import "./App.css";
 import InputField from "./Component/InputField";
@@ -32,12 +33,33 @@ function App() {
 
   return (
     <>
-      <div>
-        {/* <InputField /> */}
-        {/* <LoginForm /> */}
-        <LoginFormShotcut />
-      </div>
-      {/* <div>
+      <Router>
+        <div class="">
+          <ul className="Router__link">
+            <li className="">
+              <Link to="/">
+                <button type="" className="">
+                  login Form
+                </button>
+              </Link>
+            </li>
+            <li className="">
+              <Link to="/popup-modal">
+                <button type="" className="">
+                  Popup Modal
+                </button>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <Routes>
+          <Route path="/" element={<LoginFormShotcut />}></Route>
+          {/* <div> */}
+          {/* <InputField /> */}
+          {/* <LoginForm /> */}
+          {/* <LoginFormShotcut /> */}
+          {/* </div> */}
+          {/* <div>
         <div
           class="alert alert-danger alert-dismissible fade show"
           role="alert"
@@ -77,9 +99,12 @@ function App() {
           </Button>
         </form>
       </div> */}
-      <div>
-        <PopupModel />
-      </div>
+          <Route path="/popup-modal" element={<PopupModel />}></Route>
+          {/* <div>
+            <PopupModel />
+          </div> */}
+        </Routes>
+      </Router>
     </>
   );
 }

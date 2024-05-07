@@ -3,3 +3,21 @@
   margin:0px;
   box-sizing: border-box;
 }
+
+.Router__link{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Router__link button{
+  padding: 05px  10px;
+  border:2px solid whitesmoke;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
