@@ -31,7 +31,8 @@ const [fullName, setfullName] = useState({
    const handleSubmit = (event) => {
     console.log("vipul")
     event.preventDefault();
-  
+    alert('form submitted successfully')
+   
   };
 
 return(<>
