@@ -9,27 +9,27 @@ import LoginFormShotcut from "./Component/LoginFormShotcut";
 import PopupModel from "./PopModel/PopupModel";
 
 function App() {
-  const [name, setname] = useState("");
-  const [fullname, setfullname] = useState();
-  // ......................
-  const [lname, setLname] = useState("");
-  const [lastname, setLastname] = useState();
+  // const [name, setname] = useState("");
+  // const [fullname, setfullname] = useState();
+  // // ......................
+  // const [lname, setLname] = useState("");
+  // const [lastname, setLastname] = useState();
 
-  const inPutValue = (event) => {
-    console.log(event.target.value, "helll");
-    setname(event.target.value);
-  };
+  // const inPutValue = (event) => {
+  //   console.log(event.target.value, "helll");
+  //   setname(event.target.value);
+  // };
 
-  const inPutValueTwo = (event) => {
-    console.log(event.target.value, "hello");
-    setLname(event.target.value);
-  };
+  // const inPutValueTwo = (event) => {
+  //   console.log(event.target.value, "hello");
+  //   setLname(event.target.value);
+  // };
 
-  const onSubmit = (event) => {
-    event.preventDefault();
-    setfullname(name);
-    setLastname(lname);
-  };
+  // const onSubmit = (event) => {
+  //   event.preventDefault();
+  //   setfullname(name);
+  //   setLastname(lname);
+  // };
 
   return (
     <>

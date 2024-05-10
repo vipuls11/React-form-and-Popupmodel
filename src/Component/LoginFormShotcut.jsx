@@ -9,6 +9,7 @@ const [fullName, setfullName] = useState({
         phone:""
     })
 
+
     const inputEvent = event =>{
             console.log(event.target.value);
             console.log(event.target.name);
@@ -27,10 +28,11 @@ const [fullName, setfullName] = useState({
             });
     };
 
-    const onSubmits=(event)=>{
-        event.preventDefault();
-        alert("Form submitted");
-    };
+   const handleSubmit = (event) => {
+    console.log("vipul")
+    event.preventDefault();
+  
+  };
 
 return(<>
 <div className='FormLogin-Input'>
@@ -38,7 +40,7 @@ return(<>
 
     <p className='Form-InputLogin__p'>Email : {fullName.email}</p>
     <p className='Form-InputLogin__p'>Number : {fullName.phone}</p>
-    <form className="" onSubmit={onSubmits}>
+    <form className="" onSubmit={handleSubmit}>
         <input className='Input-Item' 
         type='text'  
         placeholder='Enter your Name' 
@@ -72,7 +74,7 @@ return(<>
          onChange={inputEvent}
          autoComplete='off'
          /> 
-        <button className='button' type='button'>ON SUBMIT</button>
+        <button className='button' type='submit'>ON SUBMIT</button>
     </form>
     
 </div>
