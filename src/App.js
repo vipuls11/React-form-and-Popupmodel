@@ -7,6 +7,7 @@ import LoginForm from "./Component/LoginForm";
 
 import LoginFormShotcut from "./Component/LoginFormShotcut";
 import PopupModel from "./PopModel/PopupModel";
+import LoginandSignUp from "./LoginandSignup/LoginandSignUp";
 
 function App() {
   // const [name, setname] = useState("");
@@ -39,7 +40,14 @@ function App() {
             <li className="">
               <Link to="/">
                 <button type="" className="">
-                  login Form
+                  login & SignUp
+                </button>
+              </Link>
+            </li>
+            <li className="">
+              <Link to="/details-form">
+                <button type="" className="">
+                  Details Form
                 </button>
               </Link>
             </li>
@@ -53,7 +61,8 @@ function App() {
           </ul>
         </div>
         <Routes>
-          <Route path="/" element={<LoginFormShotcut />}></Route>
+          <Route path="/" element={<LoginandSignUp />}></Route>
+          <Route path="/details-form" element={<LoginFormShotcut />}></Route>
           {/* <div> */}
           {/* <InputField /> */}
           {/* <LoginForm /> */}
